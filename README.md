@@ -1,33 +1,35 @@
 Diamond AWS Store
 
-Diamond AWS Store is a full stack e commerce web application focused on diamond sales. It is built with Next.js, Node.js, and deployed on AWS with support for RDS database integration. The project demonstrates scalable cloud deployment, professional frontend design, and robust backend architecture suitable for production level applications.
+Diamond AWS Store is a production ready full stack e commerce web application for online diamond sales. The platform is designed to demonstrate cloud native deployment, scalable architecture, and modern web development practices. It is fully hosted on Amazon Web Services with integration for RDS relational database, making it suitable as a portfolio project and as a base for real world e commerce applications.
 
 Project Overview
 
-The goal of this project is to simulate a real world online diamond store. It includes a product catalog, shopping cart, and checkout flow. The application is designed to be lightweight yet extendable and is fully hosted on AWS, ensuring high availability and reliability.
+This project replicates the workflow of a professional online jewelry store. The system includes a product catalog, shopping cart, and checkout process. The application is optimized for performance using Next.js server side rendering and deployed to AWS EC2 with RDS for persistent storage. The goal is to provide a technically strong demonstration of building, deploying, and scaling a cloud hosted e commerce solution.
 
 Key Features
 
-Product catalog page with diamond listings including name, description, image, and price
+Product catalog with item listings including name, description, price, and image
 
-Shopping cart with add, remove, and quantity update functions
+Shopping cart with add, remove, and quantity update functionality
 
-Checkout workflow with order summary and simulated payment process
+Checkout page with order summary and simulated payment confirmation
 
-Server side rendering with Next.js for optimized performance and SEO
+Next.js server side rendering for performance and SEO optimization
 
-AWS deployment with EC2 hosting, load balancing, and RDS database for persistent storage
+AWS based hosting with EC2 and RDS, designed for reliability and uptime above 99 percent
 
-CI/CD pipeline integration with GitHub Actions for automated testing and deployment
+CI CD pipeline with GitHub Actions for automated testing and deployment
+
+Modular and extensible architecture for future feature expansion
 
 Technology Stack
 
 Frontend: Next.js, React, TypeScript, TailwindCSS
 Backend: Node.js, Next.js API Routes
-Database: AWS RDS with MySQL support
-Cloud and DevOps: AWS EC2, AWS RDS, Docker, GitHub Actions
+Database: AWS RDS with MySQL
+Cloud and DevOps: AWS EC2, AWS RDS, Docker, GitHub Actions, CloudWatch
 
-Getting Started
+Local Setup
 
 Clone the repository
 
@@ -40,30 +42,64 @@ Install dependencies
 npm install
 
 
-Run locally
+Run development server
 
 npm run dev
 
 
 Open http://localhost:3000
- to view the application in development mode.
+ to view the application.
 
 Deployment on AWS
 
-The application is hosted on AWS EC2 instances with Docker for containerization and RDS for relational database support. The setup is designed to achieve over 99 percent uptime with auto scaling groups and monitoring through AWS CloudWatch. The backend and frontend are integrated into a single Next.js application, making the deployment process efficient and reproducible. A CI/CD pipeline is implemented with GitHub Actions ensuring that each commit is tested and deployed automatically to AWS.
+The application is hosted on AWS with the following architecture:
 
-Future Improvements
+EC2 instances for hosting the Next.js application
 
-User authentication and account management with AWS Cognito
+Docker for containerization and environment consistency
 
-Integration of real payment gateway such as Stripe or PayPal
+RDS for relational database storage with MySQL
 
-Order history and tracking dashboard for customers
+CloudWatch for monitoring and logging
 
-Admin panel for product and inventory management
+Auto Scaling Groups for high availability and fault tolerance
 
-Full migration from static data to AWS RDS with schema design and optimized queries
+GitHub Actions for continuous integration and delivery pipeline
+
+This setup is designed to showcase professional deployment practices with AWS cloud services.
+
+Roadmap
+
+Planned improvements include:
+
+User authentication and profile management using AWS Cognito
+
+Payment gateway integration with Stripe or PayPal
+
+Persistent shopping cart and order history stored in RDS
+
+Admin dashboard for product and inventory management
+
+Advanced search and filtering for product catalog
+
+Server side caching and performance tuning for large product datasets
+
+Why This Project
+
+Diamond AWS Store highlights practical skills for modern software engineering roles:
+
+End to end web application development
+
+Cloud infrastructure deployment and monitoring
+
+Database integration and schema design
+
+Scalable architecture and CI CD automation
+
+Clear and professional documentation for recruiters and engineers
+
+This repository is designed as a competitive portfolio project to demonstrate both technical depth and production readiness.
 
 License
 
-This project is open source under the MIT License.
+This project is licensed under the MIT License.

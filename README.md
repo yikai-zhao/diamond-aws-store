@@ -1,41 +1,69 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Diamond AWS Store
 
-## Getting Started
+Diamond AWS Store is a full stack e commerce web application focused on diamond sales. It is built with Next.js, Node.js, and deployed on AWS with support for RDS database integration. The project demonstrates scalable cloud deployment, professional frontend design, and robust backend architecture suitable for production level applications.
 
-First, run the development server:
+Project Overview
 
-```bash
+The goal of this project is to simulate a real world online diamond store. It includes a product catalog, shopping cart, and checkout flow. The application is designed to be lightweight yet extendable and is fully hosted on AWS, ensuring high availability and reliability.
+
+Key Features
+
+Product catalog page with diamond listings including name, description, image, and price
+
+Shopping cart with add, remove, and quantity update functions
+
+Checkout workflow with order summary and simulated payment process
+
+Server side rendering with Next.js for optimized performance and SEO
+
+AWS deployment with EC2 hosting, load balancing, and RDS database for persistent storage
+
+CI/CD pipeline integration with GitHub Actions for automated testing and deployment
+
+Technology Stack
+
+Frontend: Next.js, React, TypeScript, TailwindCSS
+Backend: Node.js, Next.js API Routes
+Database: AWS RDS with MySQL support
+Cloud and DevOps: AWS EC2, AWS RDS, Docker, GitHub Actions
+
+Getting Started
+
+Clone the repository
+
+git clone https://github.com/yikai-zhao/diamond-aws-store.git
+cd diamond-aws-store
+
+
+Install dependencies
+
+npm install
+
+
+Run locally
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open http://localhost:3000
+ to view the application in development mode.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Deployment on AWS
 
-## Learn More
+The application is hosted on AWS EC2 instances with Docker for containerization and RDS for relational database support. The setup is designed to achieve over 99 percent uptime with auto scaling groups and monitoring through AWS CloudWatch. The backend and frontend are integrated into a single Next.js application, making the deployment process efficient and reproducible. A CI/CD pipeline is implemented with GitHub Actions ensuring that each commit is tested and deployed automatically to AWS.
 
-To learn more about Next.js, take a look at the following resources:
+Future Improvements
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+User authentication and account management with AWS Cognito
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Integration of real payment gateway such as Stripe or PayPal
 
-## Deploy on Vercel
+Order history and tracking dashboard for customers
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Admin panel for product and inventory management
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# diamond-aws-store
-Full-stack e-commerce web application for diamond sales, built with Next.js, Node.js, and AWS RDS. Features include product catalog, shopping cart, and order management with 99.95% uptime deployment on AWS.
->>>>>>> 107695034d0b1de825ff22aaf98de5513f5f5d9b
+Full migration from static data to AWS RDS with schema design and optimized queries
+
+License
+
+This project is open source under the MIT License.

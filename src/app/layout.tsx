@@ -1,4 +1,4 @@
-﻿import "./globals.css"
+import "./globals.css"
 import { CartProvider } from "./context/CartContext"
 import Link from "next/link"
 
@@ -8,7 +8,7 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
+  return (<Navbar />
     <html lang="en">
       <body>
         <CartProvider>

@@ -2,7 +2,7 @@
   "name": "diamond-aws-store",
   "version": "0.1.0",
   "private": true,
-  "scripts": {`n    "prisma": { "seed": "ts-node prisma/seed.ts" },
+  "scripts": {`n    "prisma": { "seed": "ts-node prisma/seed.ts" },`n    "prisma": { "seed": "ts-node prisma/seed.ts" },
     "dev": "next dev",
     "build": "next build --turbopack",
     "start": "next start",

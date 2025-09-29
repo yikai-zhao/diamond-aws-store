@@ -9,5 +9,10 @@ async function main() {
 }
 
 main()
-  .then(() => prisma.())
-  .catch(err => { console.error(err); prisma.(); });
+  .then(async () => {
+    await prisma.$disconnect();
+  })
+  .catch(async (err) => {
+    console.error(err);
+    await prisma.$disconnect();
+  });

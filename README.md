@@ -100,6 +100,9 @@ Clear and professional documentation for recruiters and engineers
 
 This repository is designed as a competitive portfolio project to demonstrate both technical depth and production readiness.
 
+License
+
+This project is licensed under the MIT License.
 ## Architecture
 
 ```mermaid
@@ -114,6 +117,4 @@ graph LR
     GitHub --> EC2
     EC2 --> CloudWatch[AWS CloudWatch Monitoring and Logs]
 
-License
 
-This project is licensed under the MIT License.

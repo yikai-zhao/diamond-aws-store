@@ -1,0 +1,28 @@
+digraph DiamondAWSStore {
+	rankdir=LR size="8,5"
+	User [label="User
+(Web/Mobile)" color=lightblue shape=oval style=filled]
+	Frontend [label="Next.js
+(Frontend)" color=lightyellow shape=box style=filled]
+	Backend [label="Node.js API
+(Express/REST)" color=lightgreen shape=box style=filled]
+	DB [label="AWS RDS
+(MySQL Master)" color=lightpink shape=cylinder style=filled]
+	ReadReplica [label="RDS Read Replica" color=lightgrey shape=cylinder style=filled]
+	Docker [label="Docker Container" color=orange shape=box3d style=filled]
+	EC2 [label="AWS EC2
+(Deployment Host)" color=gold shape=component style=filled]
+	GitHub [label="GitHub Actions
+CI/CD Pipeline" color=lightcoral shape=folder style=filled]
+	CloudWatch [label="AWS CloudWatch
+Monitoring & Logs" color=lightcyan shape=note style=filled]
+	User -> Frontend
+	Frontend -> Backend
+	Backend -> DB [label="Write/Read"]
+	Backend -> ReadReplica [label="Read-only"]
+	Backend -> Docker
+	Docker -> EC2
+	GitHub -> Docker [label="Build & Push"]
+	GitHub -> EC2 [label=Deploy]
+	EC2 -> CloudWatch [label="Metrics & Logs"]
+}

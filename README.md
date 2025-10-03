@@ -104,15 +104,16 @@ This repository is designed as a competitive portfolio project to demonstrate bo
 
 ```mermaid
 graph LR
-    User[User (Web/Mobile)] --> Frontend[Next.js (Frontend)]
+    User[User: Web/Mobile] --> Frontend[Next.js Frontend]
     Frontend --> Backend[Node.js API (Express/REST)]
     Backend --> DB[(AWS RDS MySQL Master)]
-    Backend --> ReadReplica[(RDS Read Replica)]
+    Backend --> Replica[(RDS Read Replica)]
     Backend --> Docker[Docker Container]
-    Docker --> EC2[AWS EC2 (Deployment Host)]
+    Docker --> EC2[AWS EC2 Deployment Host]
     GitHub[GitHub Actions CI/CD] --> Docker
     GitHub --> EC2
     EC2 --> CloudWatch[AWS CloudWatch Monitoring & Logs]
+
 
 License
 
